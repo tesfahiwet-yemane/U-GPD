@@ -24,7 +24,7 @@ TRANS SIMPLE 7.433 38.389 0
 VGOUT ./NLL/model/80km0.5   #Output File Root Name
 
 # wave type
-VGTYPE P
+VGTYPE S
 
 # grid description
 # 80 x 80 x 40 km 3D grid with 0.5 km spacing
@@ -57,7 +57,7 @@ LAYER 40 7.5 0.0 4.28 0.0 3.19 0.0
 # input, output filename root
 # (GTFILES <input file root> <output file root> wave_type (P, S))
 
-GTFILES  ./NLL/model/80km0.5  ./NLL/time/80km0.5 P
+GTFILES  ./NLL/model/80km0.5  ./NLL/time/80km0.5 S
 
 # time grid modes
 GTMODE GRID3D ANGLES_YES
