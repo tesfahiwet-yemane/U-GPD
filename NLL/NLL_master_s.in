@@ -93,13 +93,13 @@ LOCSIG Sacha Lapins, University of Bristol, 2021
 
 # comment
 # (LOCCOM comment)
-LOCCOM 80km x 80 km x 42.5 km search grid at 0.5km spacing. P-waves only.
+LOCCOM 80km x 80 km x 42.5 km search grid at 0.5km spacing. P-waves and S-waves with defined P- and S-wave velocity models.
 
 # input  grid filenames root, output filename
 # (LOCFILES <obs file> obs_type  <travel-time grid files path/root> <output file path/root>)
 #    (char[])  obs_type : (NLLOC_OBS, HYPO71, HYPOELLIPSE, RENASS_DEP, SEISAN)
 #
-LOCFILES ./NLL/picks/pickfile.hpf NLLOC_OBS ./NLL/time/80km0.5 ./NLL/loc/ALL
+LOCFILES ./NLL/picks/pickfile.hpf NLLOC_OBS ./NLL/time/80km0.5 ./NLL/loc_s/ALL
 
 # output hypocenter file types
 # (LOCHYPOUT type1, type2, ...)
