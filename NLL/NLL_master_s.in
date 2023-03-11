@@ -99,7 +99,7 @@ LOCCOM 80km x 80 km x 42.5 km search grid at 0.5km spacing. P-waves and S-waves 
 # (LOCFILES <obs file> obs_type  <travel-time grid files path/root> <output file path/root>)
 #    (char[])  obs_type : (NLLOC_OBS, HYPO71, HYPOELLIPSE, RENASS_DEP, SEISAN)
 #
-LOCFILES ./NLL/picks/pickfile.hpf NLLOC_OBS ./NLL/time/80km0.5 ./NLL/loc_s/ALL
+LOCFILES ./NLL/picks/pickfile_s.hpf NLLOC_OBS ./NLL/time/80km0.5 ./NLL/loc_s/ALL
 
 # output hypocenter file types
 # (LOCHYPOUT type1, type2, ...)
@@ -159,7 +159,7 @@ LOCGRID  161 161 86  0.0 0.0 -2.5  0.5 0.5 0.5   PROB_DENSITY  SAVE
 #    (float)   minimum_dist_sta_to_grid (-1 for no min)
 #    (int)   flag indicating if duplicate arrivals used for location (1=reject, 0=use if time diff < sigma / 2)
 #            duplicate arrivals have same station label and phase name
-LOCMETH EDT_OT_WT  9999  4 -1 -1 1.76 -1 -1 0
+LOCMETH EDT_OT_WT  9999  4 -1 -1 -1 -1 -1 0
 
 # gaussian model error parameters
 # (LOCGAU Sigma_T (s), CorrLen (km))
