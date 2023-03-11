@@ -24,7 +24,7 @@ TRANS SIMPLE 7.433 38.389 0
 VGOUT ./NLL/model/80km0.5   #Output File Root Name
 
 # wave type
-VGTYPE P
+VGTYPE S
 
 # grid description
 # 80 x 80 x 40 km 3D grid with 0.5 km spacing
@@ -99,7 +99,7 @@ LOCCOM 80km x 80 km x 42.5 km search grid at 0.5km spacing. P-waves and S-waves 
 # (LOCFILES <obs file> obs_type  <travel-time grid files path/root> <output file path/root>)
 #    (char[])  obs_type : (NLLOC_OBS, HYPO71, HYPOELLIPSE, RENASS_DEP, SEISAN)
 #
-LOCFILES ./NLL/picks/pickfile.hpf NLLOC_OBS ./NLL/time/80km0.5 ./NLL/loc_s/ALL
+LOCFILES ./NLL/picks/pickfile_s.hpf NLLOC_OBS ./NLL/time/80km0.5 ./NLL/loc_s/ALL
 
 # output hypocenter file types
 # (LOCHYPOUT type1, type2, ...)
